@@ -1,0 +1,29 @@
+{
+  "name": "mrmongoo-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "mrmongoo-cli": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gibo <gbonenfant@inolam.fr>",
+  "license": "ISC",
+  "description": "This module that allows creating models, controllers, routes and validation with Mongoose and JOI.",
+  "dependencies": {
+    "joi": "^18.0.0",
+    "mongoose": "^8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gibo-inolam/mrmongoo-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gibo-inolam/mrmongoo-cli/issues",
+    "email": "gbonenfant@inolam.fr"
+  },
+  "readme": "README.md"
+}
