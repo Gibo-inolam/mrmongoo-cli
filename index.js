@@ -213,7 +213,7 @@ const update${capitalize(modelName)} = async(req,res) => {
         if(error){
             return res.status(401).json(error.details[0].message)
         }
-        const updated${capitalize(modelName)} = await ${capitalize(modelName)}.findByIdAndDelete(req.params.id, body, {new: true})
+        const updated${capitalize(modelName)} = await ${capitalize(modelName)}.findByIdAndUpdate(req.params.id, body, {new: true})
         if(!updated${capitalize(modelName)}){
             res.status(404).json({message: "${modelName} n'existe pas"})
         }
@@ -242,7 +242,7 @@ export { create${capitalize(modelName)}, getAll${capitalize(modelName)}s, get${c
 // Contenu du router
 const templateRouter = `
 import { Router } from "express";
-import { create${capitalize(modelName)}, getAll${capitalize(modelName)}s, get${capitalize(modelName)}ById, update${capitalize(modelName)} } from "../controllers/${modelName}.controller.js"
+import { create${capitalize(modelName)}, getAll${capitalize(modelName)}s, get${capitalize(modelName)}ById, update${capitalize(modelName)}, delete${capitalize(modelName)} } from "../controllers/${modelName}.controller.js"
 
 const router = Router()
 
