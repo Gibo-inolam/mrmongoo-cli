@@ -1,10 +1,12 @@
 {
   "name": "mrmongoo-cli",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "mrmongoo-cli": "index.js"
+    "mrmongoo-create": "create-model.js",
+    "mrmongoo-multer": "create-multer.js",
+    "mrmongoo-security": "create-user.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +16,9 @@
   "license": "ISC",
   "description": "This module that allows creating models, controllers, routes and validation with Mongoose and JOI.",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "joi": "^18.0.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.0"
   },
   "repository": {
